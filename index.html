@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бій покемонів</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <main class="arena">
+        <h1>⚔️ Бій покемонів</h1>
+        <p>Обери атаку та переможи суперника!</p>
+
+        <section class="fighters">
+            <article class="fighter">
+                <div class="pokemon">⚡</div>
+                <h2 id="hero-name">Пікачу</h2>
+                <p>Здоров'я: <span id="hero-health">100</span> / 100</p>
+                <div class="progress">
+                    <div id="hero-bar" class="progress-bar"></div>
+                </div>
+            </article>
+
+            <div class="versus">VS</div>
+
+            <article class="fighter">
+                <div class="pokemon">🔥</div>
+                <h2 id="enemy-name">Чармандер</h2>
+                <p>Здоров'я: <span id="enemy-health">100</span> / 100</p>
+                <div class="progress">
+                    <div id="enemy-bar" class="progress-bar"></div>
+                </div>
+            </article>
+        </section>
+
+        <section class="controls">
+            <button id="attack-button">⚡ Звичайна атака</button>
+            <button id="strong-button">🔥 Сильна атака</button>
+            <button id="reset-button">↻ Нова гра</button>
+        </section>
+
+        <p id="message">Бій починається! Зроби перший хід.</p>
+        <p id="battle-log">Результати атак з'являтимуться тут.</p>
+    </main>
+</body>
+</html>

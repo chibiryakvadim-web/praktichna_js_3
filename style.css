@@ -1,0 +1,145 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #171a35, #393b68);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arena {
+    width: 100%;
+    max-width: 850px;
+    padding: 30px;
+    background: #252847;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 12px 35px #0005;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.fighters {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.fighter {
+    flex: 1;
+    min-width: 0;
+    padding: 20px 12px;
+    border: 2px solid #555b89;
+    border-radius: 18px;
+    background: #303454;
+}
+
+.pokemon {
+    font-size: 70px;
+}
+
+.versus {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcf5c;
+}
+
+.progress {
+    width: 100%;
+    height: 22px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #15172a;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 100%;
+    background: #36d98b;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 14px 18px;
+    border: none;
+    border-radius: 10px;
+    background: #6b75ff;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#strong-button {
+    background: #ed704c;
+}
+
+#reset-button {
+    background: #555b70;
+}
+
+button:hover:not(:disabled) {
+    filter: brightness(1.15);
+}
+
+button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+#message {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#battle-log {
+    min-height: 40px;
+    line-height: 1.5;
+    color: #d4d7f5;
+}
+
+@media (max-width: 560px) {
+    .arena {
+        padding: 18px 10px;
+    }
+
+    .fighters {
+        gap: 5px;
+    }
+
+    .fighter {
+        padding: 12px 5px;
+    }
+
+    .pokemon {
+        font-size: 45px;
+    }
+
+    .versus {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
